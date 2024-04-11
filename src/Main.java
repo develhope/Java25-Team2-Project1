@@ -2,6 +2,41 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Inserire primo valore su x.
+        int x = 10;
+        //Inserire operatore.
+        char operator = '+';
+        //Inserire secondo valore su y.
+        int y = 5;
+
+        System.out.println( x + " è pari? " + checkValue(x));
+
+        switch (operator) {
+            case '+':
+                System.out.println("Operazione di Somma");
+                System.out.println("Il risultato è: " + sumValues(x, y));
+                break;
+            case '-':
+                System.out.println("Operazione di Sottrazione");
+                System.out.println("Il risultato è: " + subtractValues(x, y));
+                break;
+            case '*':
+                System.out.println("Operazione di Moltiplicazione");
+                System.out.println("Il risultato è: " + multiplicateValues(x, y));
+                break;
+            case '/':
+                System.out.println("Operazione di Divisione");
+                System.out.println("Il risultato è: " + divisionValues(x, y));
+                break;
+            case '^':
+                System.out.println("Potenza");
+                System.out.println("Il risultato è: " + expoValues(x, y));
+                break;
+            default:
+                System.out.println("ERRORE. Operatore non riconosciuto.");
+        }
+
+
     }
 
     public static int sumValues(int x, int y) {
