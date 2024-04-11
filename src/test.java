@@ -48,4 +48,9 @@ public class test {
         }
         return result;
     }
+    public static boolean checkNumber(int number) {
+        return (number % 2 == 0) && (number != 0);
+
+    }
+
 }
